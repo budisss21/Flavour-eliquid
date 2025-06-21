@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Simulasi Flavour E-Liquid</h1>
+    <h1>Simulasi Flavour E‑Liquid</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="erd.html">Diagram ERD</a>
@@ -16,19 +16,29 @@
     </nav>
   </header>
 
-  <main>
+  <div class="container">
     <section>
       <h2>Peringatan Usia</h2>
       <p>Aplikasi ini hanya untuk pengguna berusia 18 tahun ke atas.</p>
     </section>
+
     <section>
-      <h2>Tujuan</h2>
-      <p>Website ini memberikan edukasi dan simulasi penggunaan flavour e-liquid, tanpa menjual produk atau menyimpan data zat adiktif.</p>
+      <h2>Tujuan Aplikasi</h2>
+      <p>Website ini memberikan edukasi dan simulasi penggunaan flavour e‑liquid, tanpa elemen e‑commerce atau penyimpanan zat adiktif.</p>
     </section>
-  </main>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('ageConfirmed')) {
+      const ok = confirm("Apakah kamu berusia 18 tahun ke atas?");
+      if (ok) localStorage.setItem('ageConfirmed','yes');
+      else document.body.innerHTML = "<h2>Maaf, konten ini hanya untuk usia 18+.</h2>";
+    }
+  });
+</script>
 
   <footer>
-    <p>&copy; 2025 Flavour E-Liquid Edu</p>
+    &copy; 2025 Flavour E-Liquid Edu
   </footer>
 </body>
-</html>
