@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "brand": "Capella",
+    "name": "Vanilla Custard",
+    "vg_ratio": 70,
+    "pg_ratio": 30,
+    "category": "Dessert",
+    "description": "Krim vanila lembut dengan aroma custard."
+  },
+  {
+    "id": 2,
+    "brand": "TFA",
+    "name": "Strawberry Ripe",
+    "vg_ratio": 60,
+    "pg_ratio": 40,
+    "category": "Fruit",
+    "description": "Rasa stroberi matang dan segar."
+  }
+]
